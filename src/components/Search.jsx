@@ -5,7 +5,7 @@ const Search = ({ word, setWord, handleSubmit }) => {
   return (
     <Container className="mt-5">
       <Row className="justify-content-center">
-        <Col xs={8} sm={8} lg={7} xl={6}>
+        <Col xs={8} sm={8} lg={8} xl={7}>
           <Form onSubmit={handleSubmit}>
             <Form.Row>
               <Col>
