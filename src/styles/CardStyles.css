@@ -1,0 +1,21 @@
+#card {
+    max-width: 26rem,;
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 11px rgba(51, 49, 49, 0.05);
+}
+
+#card:hover {
+    transform: scale(1.02);
+    transition: all .2s ease-in-out;
+    box-shadow: 0 0 11px rgba(51, 49, 49, 0.3); 
+}
+
+#close-button {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.6em;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
