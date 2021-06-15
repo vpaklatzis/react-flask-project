@@ -2,6 +2,7 @@ from flask import Flask, request
 import requests 
 import os
 from dotenv import load_dotenv
+from flask_cors import CORS
 
 load_dotenv(dotenv_path="./.env")
 
@@ -13,6 +14,8 @@ if not UNSPLASH_KEY:
     raise EnvironmentError("Create .env file inside the API folder and write the Unsplash API access key")
 
 app = Flask(__name__)
+
+CORS(app)
 
 app.config["DEBUG"] = DEBUG     #To disable debug mode, write DEBUG= in the .env file
 

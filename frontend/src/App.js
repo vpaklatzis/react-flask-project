@@ -9,7 +9,6 @@ import Welcome from "./components/Welcome";
 
 import { Container, Row, Col } from 'react-bootstrap';
 
-const API_KEY = process.env.REACT_APP_UNSPLASH_API_KEY; 
 const API_URL = process.env.REACT_APP_API_URL || 'http://127.0.0.1:5050';
 
 function App() {

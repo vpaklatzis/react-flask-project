@@ -9,6 +9,7 @@ verify_ssl = true
 flask = "*"
 requests = "*"
 python-dotenv = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.9"
