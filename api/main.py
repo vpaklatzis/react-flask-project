@@ -7,11 +7,14 @@ load_dotenv(dotenv_path="./.env")
 
 UNSPLASH_URL="https://api.unsplash.com/photos/random"
 UNSPLASH_KEY=os.environ.get("UNSPLASH_KEY", "")
+DEBUG=bool(os.environ.get("DEBUG", True))
 
 if not UNSPLASH_KEY:
     raise EnvironmentError("Create .env file inside the API folder and write the Unsplash API access key")
 
 app = Flask(__name__)
+
+app.config["DEBUG"] = DEBUG     #To disable debug mode, write DEBUG= in the .env file
 
 @app.route("/new-image")
 def new_image():
