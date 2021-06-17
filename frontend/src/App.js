@@ -28,7 +28,7 @@ function App() {
         })
 
         setWord('');
-  };
+    };
 
   const handleDeleteImage = (id) => {
     setImages(images.filter((image) => image.id !== id));
